@@ -1,0 +1,33 @@
+name: magic
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - git
+  - openslide-python
+  - openslide
+  - matplotlib-scalebar
+  - pip
+  - pip:
+      - pandas
+      - scikit-image
+      - scipy
+      - numpy
+      - scikit-learn
+      - torch
+      - torchvision
+      - timm
+      - torch-geometric
+      - tqdm
+      - pyyaml
+      - nystrom-attention
+      - opencv-python
+      - joblib
+      - matplotlib
+      - xgboost
+      - tensorboard
+      - huggingface-hub
+      - seaborn
+      - wandb
+

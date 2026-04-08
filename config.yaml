@@ -1,0 +1,80 @@
+FusionModel:
+  patch_feature_size: 384
+  dropout_atten_mil: True
+  hovernet_feature_size :  171
+  prot_input_size: 180
+  p_dropout_fc: 0.20
+  vae_hidden_dims: [128]
+  vae_latent_dims: 64
+  vae_dropout :  0.2
+  gate_hist: True
+  gate_hovernet: True
+  gate_prot: True
+  use_bilinear: [True, True, True]
+  scale_hist: 1
+  scale_hovernet: 1
+  scale_prot: 1
+
+
+Only_WSI_UNI:
+  patch_feature_size: 384
+  dropout_atten_mil: True
+  p_dropout_fc: 0.2
+
+
+Only_WSI_hovernet:
+  hovernet_feature_size: 171
+  dropout_atten_mil: True
+  p_dropout_fc: 0.2
+
+
+Only_Prot:
+  prot_embedd_method: 'vae'
+  prot_input_size: 180
+  prot_hidden_dims: [64,64]
+  p_dropout_fc: 0.2
+  vae_hidden_dims: [128]
+  vae_latent_dims: 64
+  vae_dropout: 0.2
+
+
+FusionModel_UNI_hovernet:
+  patch_feature_size: 384
+  dropout_atten_mil: True
+  hovernet_feature_size: 171
+  p_dropout_fc: 0.20
+  gate_hist: True
+  gate_hovernet: True
+  use_bilinear: [True, True]
+  scale_hist: 1
+  scale_hovernet: 1
+
+
+FusionModel_UNI_prot:
+  patch_feature_size: 384
+  dropout_atten_mil: True
+  prot_input_size: 180
+  p_dropout_fc: 0.20
+  vae_hidden_dims: [128]
+  vae_latent_dims: 64
+  vae_dropout: 0.2
+  gate_hist: True
+  gate_prot: True
+  use_bilinear: [True,True]
+  scale_hist: 1
+  scale_prot: 1
+
+
+FusionModel_hovernet_prot:
+  dropout_atten_mil: True
+  hovernet_feature_size: 171
+  prot_input_size: 180
+  p_dropout_fc: 0.20
+  vae_hidden_dims: [128]
+  vae_latent_dims: 64
+  vae_dropout: 0.2
+  gate_hovernet: True
+  gate_prot: True
+  use_bilinear: [True, True]
+  scale_hovernet: 1
+  scale_prot: 1
