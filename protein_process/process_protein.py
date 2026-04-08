@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 
 
 relative_exp = pd.read_csv('/report.pg_matrix.csv',index_col=0)#protein_exp from DIA-NN
-#Remove proteins that are missing in 30% of the samples
+#Remove proteins that are missing in 15% of the samples
 na_ratio = relative_exp.isna().mean(axis=1)
 relative_exp_filtered = relative_exp[na_ratio <= 0.15]
 
