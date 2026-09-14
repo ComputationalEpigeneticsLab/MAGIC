@@ -59,10 +59,15 @@ Using Hover-Net(https://github.com/vqdang/hover_net) pretrained on PanNuke Datas
 
 `python final_feature.py`
 
-### 4. Protein expression preprocessing
+### 4. Protein expression preprocessing and feature selection
+#### 4.1 Protein expression preprocessing
 `cd protein_process`
 
 `python process_protein.py`
+
+#### 4.2 Protein feature selection
+
+`python xgboost_feature_selection.py`
 
 ### 5. Training MAGIC
 MAGIC takes as input bags of patch-level deep features and cellular phenotype features, alongside protein expression profiles, to predict treatment response. Hyperparameter configurations can be found in the folder "config.yaml". 
